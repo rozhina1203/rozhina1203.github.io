@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Rozhina</title>
 
-    <!-- Google Font (Elegant Serif) -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #1c1a17; /* deep charcoal-brown */
-            color: #e8e2d8; /* warm parchment */
+            background-color: #1c1a17;
+            color: #e8e2d8;
             font-family: 'Cormorant Garamond', serif;
             display: flex;
             justify-content: center;
@@ -21,45 +21,57 @@
         }
 
         .container {
-            max-width: 700px;
+            max-width: 900px;
             padding: 40px;
-            text-align: center;
         }
 
         h1 {
+            text-align: center;
             font-weight: 400;
             font-size: 48px;
             letter-spacing: 2px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
         }
 
         img {
-            width: 220px;
+            width: 260px;
             height: auto;
             border-radius: 4px;
-            margin-bottom: 30px;
-            filter: grayscale(20%);
             border: 1px solid #8c7f6a;
+            filter: grayscale(20%);
         }
 
         p {
             font-size: 20px;
-            line-height: 1.6;
+            line-height: 1.7;
             font-weight: 300;
         }
 
-        .line {
-            width: 60px;
-            height: 1px;
-            background-color: #8c7f6a;
-            margin: 25px auto;
-        }
-
         footer {
-            margin-top: 40px;
+            text-align: center;
+            margin-top: 60px;
             font-size: 14px;
             opacity: 0.6;
         }
+
+        /* Responsive: stack vertically on small screens */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            img {
+                width: 220px;
+            }
+        }
+
     </style>
 </head>
 
@@ -68,22 +80,24 @@
     <div class="container">
         <h1>Rozhina Kheiri</h1>
 
-        <div class="line"></div>
+        <div class="content">
+            <!-- Replace with your image file -->
+            <img src="your-image.jpg" alt="Portrait">
 
-        <!-- Replace "your-image.jpg" with your actual image filename -->
-        <img src="your-image.jpg" alt="Portrait">
-
-        <p>
-            Write your paragraph here.  
-            This space can hold a quiet introduction about who you are, 
-            what draws you toward beauty or structure, 
-            and what you are becoming.
-        </p>
+            <p>
+                Write your paragraph here. This space can hold a quiet
+                introduction about who you are, what draws you toward beauty,
+                language, solitude, or becoming.
+            </p>
+        </div>
 
         <footer>
             Helsinki · 2026
         </footer>
     </div>
+
+</body>
+</html>
 
 </body>
 </html>
