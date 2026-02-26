@@ -1,7 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rozhina</title>
 
-<head> <title> Personal Website </title></head>
+    <!-- Google Font (Elegant Serif) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
 
-<body dir=rtl>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1c1a17; /* deep charcoal-brown */
+            color: #e8e2d8; /* warm parchment */
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .container {
+            max-width: 700px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 220px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            filter: grayscale(20%);
+            border: 1px solid #8c7f6a;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .line {
+            width: 60px;
+            height: 1px;
+            background-color: #8c7f6a;
+            margin: 25px auto;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Rozhina Kheiri</h1>
+
+        <div class="line"></div>
+
+        <!-- Replace "your-image.jpg" with your actual image filename -->
+        <img src="your-image.jpg" alt="Portrait">
+
+        <p>
+            Write your paragraph here.  
+            This space can hold a quiet introduction about who you are, 
+            what draws you toward beauty or structure, 
+            and what you are becoming.
+        </p>
+
+        <footer>
+            Helsinki · 2026
+        </footer>
+    </div>
+
+</body>
 </html>
